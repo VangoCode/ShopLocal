@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block body %}
+        
+    <table>
+        
+        {% for row in businesses %}
+        
+            {% for key, value in row.items() %}
+
+            <tr>
+
+                <th> {{ key }} </th>
+                <td> {{ value }} </td>
+
+            </tr>
+
+            {% endfor %}
+        
+        {% endfor %}
+
+    </table>
+
+{% endblock %}
